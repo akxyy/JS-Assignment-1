@@ -57,13 +57,13 @@ console.log(array3);
 
 //3d.Using any one of the array iteration methods console the string concatenation of all items of the array and also console the sum of all the items ( convert to integer before calculating)
 const array4 = ["1", "2", "3", "4", "5", "6", "7"];
-var result = "";
+let result = "";
 array4.forEach((element) => {
     result+=element;
 });
 console.log(result);
 
-var sum = 0;
+let sum = 0;
 array4.forEach((element) => {
     element=parseInt(element);
     sum+=element;
@@ -87,10 +87,10 @@ array6.forEach((element) => {
 let array_string = ["1", "2", "3", "4", "5", "6", "7"];
 let array_string2 = [1, 2, "3", 4, 5, 6, "7"];
 
-for (let i = 0; i < array_string.length; i++) {
-    for (let j = 0; j < array_string2.length; j++) {
-        if (typeof array_string[i] === typeof array_string2[j]) {
-            console.log(array_string2[j]);
+for (let value1 of array_string) {
+    for (let value2 of array_string2) {
+        if (typeof value1 === typeof value2) {
+            console.log(value2);
         }
     }
     break;
